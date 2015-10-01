@@ -5,11 +5,11 @@ import feedparser
 import time	
 import smtplib
 
-user='shakti.syam.99@gmail.com'		
-passwd='dumzidumzi'
+user='your_email'		
+passwd='your_password'
 
-fromaddr = 'shakti.syam.99@gmail.com'
-toaddrs  = 'shakti.syam.99@gmail.com'
+fromaddr = 'some_email'
+toaddrs  = 'some_email'
 
 newmails = feedparser.parse("https://" + user + ":" + passwd + "@mail.google.com/gmail/feed/atom").entries
 
