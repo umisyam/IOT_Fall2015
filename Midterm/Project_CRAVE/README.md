@@ -1,9 +1,9 @@
 # PROJECT CRAVE
 
 ###A physical installation to capture and visualize human's craving of food. 
-See it working here on the video demo.
+See it working here on the video demo. This is the midterm project by Umi Syam for Internet of Things - Fall 2015, MFA Design & Technology, Parsons School of Design.
 
-**Technology:** , Node.JS, Socket.io, P5.js.
+**Technology:** Node.JS, Socket.io, P5.js.
 
 **Hardware:** Raspberry Pi, Capacitive Touch Sensor 5-pad, Temperature & Humidity Sensor.
 
