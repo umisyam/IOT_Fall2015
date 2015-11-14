@@ -9,6 +9,7 @@ See it working here on the video demo.
 
 Screenshots:
 
-
+![image](https://github.com/umisyam/IOT_Fall2015/raw/master/Midterm/Project_CRAVE/screenshot/1.png)
+![image](https://github.com/umisyam/IOT_Fall2015/raw/master/Midterm/Project_CRAVE/screenshot/2.png)
 
 *Background music credit to Nate Scheible from 'Matter' album.*
