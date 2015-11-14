@@ -1,0 +1,56 @@
+<!-- HTML Visualization file  
+*   Umi Syam - November 2015
+*   Internet of Things
+-->
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+
+  <title>Craving Visualization</title>
+  <meta name="description" content="My Parse App">
+  <meta name="viewport" content="width=device-width">
+  <!-- <link rel="stylesheet" href="css/reset.css"> -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+  <link href='https://fonts.googleapis.com/css?family=Nixie+One' rel='stylesheet' type='text/css'>
+
+  <script language="javascript" type="text/javascript" src="//cdn.jsdelivr.net/p5.js/0.3.8/p5.min.js"></script>
+  <script language="javascript" type="text/javascript" src="//cdn.jsdelivr.net/p5.js/0.3.8/addons/p5.dom.js"></script>
+</head>
+
+<body onload="fromParse()">
+
+    <script src="http://192.168.1.136:5000/socket.io/socket.io.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+    <div id="topBarViz">
+      <div id="topBarVizLeft">
+        <p style="float: left; margin-right: 20px; text-align: center;">
+          Latest Temperature: 
+          <span id="temperature">0 </span>
+          <span> C</span>
+        </p>
+        <p style="float: left; text-align: center;">
+          Latest Humidity: 
+          <span id="humidity">0 </span>
+          <span> %</span>
+        </p>
+        <p style="clear:both">
+          Pizza: <span id="piz">0 </span> &nbsp;
+          Sushi: <span id="sus">0 </span> &nbsp;
+          Steak: <span id="ste">0 </span> &nbsp;
+          Burger: <span id="bur">0 </span> &nbsp;
+          Bacon: <span id="bac">0 </span> &nbsp;
+        </p>
+      </div>
+      <div id="topBarVizRight">
+        <button id="fromParse" onclick="window.location.href='/'">RESTART</button>
+      </div>
+    </div>  
+
+    <script language="javascript" type="text/javascript" src="../sketch.js"></script>
+
+</body>
+
+</html>

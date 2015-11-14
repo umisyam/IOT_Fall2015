@@ -1,0 +1,225 @@
+/*  Main CSS file  
+*   Umi Syam - November 2015
+*   Internet of Things
+*/
+
+body {
+	/*font-family: 'Open Sans', sans-serif;*/
+	font-size: 14px;
+	background: #000;
+	color: #fff;
+	padding: 0; margin: 0;
+	/*font-family: Helvetica;*/
+	font-family: 'Nixie One', cursive;
+}
+canvas {vertical-align: top;}
+
+.mainContainer {
+	margin: 0 auto;
+	width: 900px;
+	min-height: 80px;
+	text-align: center;
+}
+
+#hello {
+	width: 100%;
+	height: 100vh;
+	z-index: 10;
+	margin: 0;
+	padding: 0 0 0 10vw;
+	position: absolute;
+	
+	background: url(../images/bg.jpg) repeat-y top left fixed; 
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
+
+#oneliner {
+	position: relative;
+	font-weight: bold;
+	/*text-transform: uppercase;*/
+	line-height: 10vh;
+	font-size: 10vh;
+	top: 28vh;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+#toParse {
+	width: 40vw;
+    height: 50px;
+    font-size: 3vh;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Nixie One', cursive;
+    position: relative;
+    top: 34vh;
+    background-color: #fff266;
+}
+
+
+#topBar {
+	display: none;
+    position: relative;
+    z-index: 100;
+    background-color: #28343D;
+    width: 100vw;
+    height: 65px;
+    /* color: #DB2620; */
+    /* color: #999; */
+    padding: 15px 0px 10px 0px;
+    letter-spacing: 2px; 
+}
+#topBarLeft {
+	background-color: #28343D;
+    float: left;
+    width: 47.3vw;
+    height: 50px;
+    padding: 15px 0px 10px 50px;
+    margin-bottom: 30px;
+}
+#topBarRight {
+	background-color: #28343D;
+    float: right;
+    width: 45.04vw;
+    text-align: right;
+    /* height: 50px; */
+    padding: 0px 50px 5px 10px;
+    margin-bottom: 30px;
+}
+/*#mylightbox {
+	display: none;
+}*/
+#topBarViz {
+    /*display: none;*/
+    position: relative;
+    z-index: 100;
+    background-color: #28343D;
+    width: 100vw;
+    height: 65px;
+    /* color: #DB2620; */
+    /* color: #999; */
+    padding: 15px 0px 10px 0px;
+    letter-spacing: 2px;
+}
+#topBarVizLeft {
+	background-color: #28343D;
+    float: left;
+    width: 47.3vw;
+    height: 50px;
+    padding: 0px 0px 10px 50px;
+}
+#topBarVizRight {
+	background-color: #28343D;
+    float: right;
+    width: 45.04vw;
+    text-align: right;
+    /* height: 50px; */
+    padding: 0px 50px 5px 10px;
+}
+
+#results {
+	display: none;
+	position: relative;
+	z-index: 100;
+	background-color: black;
+	width: 100vw;
+	/*height: 100vh;*/
+}
+
+#results div {
+	width: 25vw;
+	height: 25vh;
+	float: left;
+	margin: 0 0 20px 0;
+}
+
+#results div iframe {
+	width: 100%;
+	height: 100%;
+}
+
+#results p {
+	width: 25vw;
+	margin: 0;
+}
+
+h1 {
+	text-align: center;
+}
+
+nav {
+	margin: 0 auto;
+    padding: 15px;
+    text-align: center;
+}
+
+
+
+#fromParse {
+	width: 220px;
+    height: 50px;
+    font-size: 14pt;
+    cursor: pointer;
+    font-family: 'Nixie One', cursive;
+    margin: 10px;
+}
+.help {
+	width: 50px;
+    height: 50px;
+    font-size: 14pt;
+    cursor: pointer;
+    font-family: 'Nixie One', cursive;
+    margin: 10px;
+    background-color: #fff266;
+    font-weight: bold;
+}
+
+/* code for animated blinking cursor */
+.typed-cursor{
+    opacity: 1;
+    font-weight: 100;
+    
+    color:#fff;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    -ms-animation: blink 0.7s infinite;
+    -o-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+#typed-strings p {
+	color: red;
+}
+@-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-ms-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-o-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+#temperature, #humidity {
+	font-weight: bold;
+}
+
+

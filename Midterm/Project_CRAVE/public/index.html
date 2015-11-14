@@ -1,0 +1,86 @@
+<!--  Main HTML file  
+*   Umi Syam - November 2015
+*   Internet of Things
+-->
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+
+  <title>Submit Yo Cravin'!</title>
+  <meta name="description" content="Manually submit your craving through a physical interface">
+  <meta name="viewport" content="width=device-width">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link href="//cdn.rawgit.com/noelboss/featherlight/1.3.4/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+  <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Nixie+One'>
+
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="//cdn.rawgit.com/noelboss/featherlight/1.3.4/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+  <!-- // <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script> -->
+  <script type="text/javascript" src="js/typed.js"></script>
+  <script>
+  $(function(){
+      $("#typed").typed({
+          // strings: ["Typed.js is a <strong>jQuery</strong> plugin.", "It <em>types</em> out sentences.", "And then deletes them.", "Try it out!"],
+          stringsElement: $('#typed-strings'),
+          typeSpeed: 0,
+          backDelay: 500,
+          loop: true,
+          contentType: 'html',
+          loopCount: false,
+          callback: function(){ foo(); },
+          resetCallback: function() { newTyped(); }
+      });
+
+  });
+
+  function newTyped(){ /* A new typed object */ }
+
+  function foo(){ console.log("Callback"); }
+
+  </script>
+
+</head>
+
+<body>
+
+  <div id="hello">
+    <div id="oneliner">You cravin' some 
+      <span class="blink">_</span>
+      <div id="typed-strings">
+          <p>pizza</p>
+          <p>sushi</p>
+          <p>steak</p>
+          <p>burger</p>
+          <p>bacon</p>
+      </div>
+      <span id="typed" style="white-space:pre;"></span>
+      ?
+    </div>
+    <button id="toParse" onclick="toParse()">I'M SO READY. SHOW ME SOME FOODPORN!</button>
+  </div>
+
+  <div id="topBar">
+    <div id="topBarLeft">
+      Hint: Click video to pause/resume, <br/>double-click to view fullscreen
+    </div>
+    <div id="topBarRight">
+      <!-- <a href="#" data-featherlight="#mylightbox">Open</a> 
+      <div id="mylightbox">This div will be opened in a lightbox</div> -->
+      <a href="images/testing1.gif" data-featherlight="image">
+      <button class="help">?</button></a>
+
+      <button id="fromParse" onclick="window.location.href='/visualize'">VISUALIZE!</button>
+    </div>
+  </div>  
+  <div id="results"></div>
+    
+
+  <script type="text/javascript" src="http://192.168.1.136:5000/socket.io/socket.io.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  <!-- // <script type="text/javascript" src="sketch.js"></script> -->
+    
+</body>
+
+</html>
