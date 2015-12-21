@@ -1,0 +1,304 @@
+/*
+* Umi Syam - Internet of Things FOODEVOTION
+* Main CSS File
+*/
+
+body {
+    font-family: 'Droid Sans Mono', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #000;
+    color: #fff;
+}
+
+#wrapper {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    min-height: 300px;
+}
+
+#wrapper h1 {
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 36pt;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: -2px;
+}
+
+.hidden{
+  display: none;
+}
+
+#sketch {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: solid 1px black;
+  width: 384px;
+  max-width: 384px;
+}
+
+input[type=text], textarea {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  /*border: 1px solid #DDDDDD;*/
+}
+ 
+input[type=text]:focus, textarea:focus {
+  box-shadow: 0 0 35px rgba(255, 255, 255, 1);
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.char-textarea {     
+  height: 100px;
+    resize: none;
+    color: #0cd7b3;
+}
+.char-count { font-weight:bold; }
+h4.count { 
+  font-weight: normal;
+  text-align: right;
+  margin: -60px 160px 30px 0;
+}
+form {
+    width: 60vw;
+    margin: 0 auto;
+    min-height: 300px;
+    text-align: left;
+}
+
+#imageCaption {
+  border: solid 1px#fff;
+    width: 80.5%;
+    margin-bottom: 25px;
+    /* max-width: 384px; */
+     margin-top: 0px; 
+    /* margin-bottom: 15px; */
+    resize: none;
+    font-size: 16pt;
+    padding: 5px 10px;
+    /*font-family: 'Cabin Sketch', sans-serif;*/
+    text-align: left;
+    background: black;
+    font-family: 'Droid Sans Mono', sans-serif;
+}
+
+#drawingTool {
+      width: 60vw;
+    margin: 0 auto;
+    min-height: 100px;
+    /* background: yellow; */
+    position: relative;
+    top: -200px;
+}
+#instruction {
+  width: 192px;
+  float: left;
+  /*background: green;*/
+  margin-right: 29px;
+  height: 192px;
+}
+#container {
+  width: 192px;
+  float: left;
+  /*background: red;*/
+}
+#container-controls {
+  width: 23.3vw;
+  float: left;
+}
+
+#buttoncontainer {
+  width: 100%;
+  display:inline-block;
+  /*background: blue;*/
+}
+#slidercontainer {
+  width: 100%;
+  /* background: gray; */
+  text-align: left;
+  padding: 15px 0 0 40px;
+}
+#submit-button {
+  /*width: 8vw;*/
+    float: right;
+    /* background: blue; */
+    padding: 5xp 0 10px 0;
+    margin: -5px;
+    height: 330px;
+}
+
+img {
+    width: 192px;
+}
+
+
+button {
+	background-color: #000;
+  border: 1px solid #fff;
+  display: inline-block;
+  cursor: pointer;
+  color: #fff;
+  font-family: 'Droid Sans Mono',;
+  font-size: 20px;
+  margin: 5px;
+  padding: 10px;
+  width: 80px;
+  height: 80px;
+}
+button:hover {
+
+}
+button:active {
+
+}
+
+.savebutton {
+  background: #000;
+  cursor: pointer;
+  height: 330px;
+  width: 120px;
+}
+
+#gallery {
+    padding: 50px 0;
+    box-shadow: inset 1px 1px 40px 0 rgba(0,0,0,.15);
+    margin: -130px auto 0 auto;
+    overflow: hidden;
+    clear: both;
+    background: #fff;
+    float: left;
+}
+#gallery li{
+  display: inline-flex;
+  width: 192px;
+  height: 192px;
+  margin: 3px;
+  padding: 0px;
+  border: 1px solid black;
+  margin-right: 5px;
+}
+#overlay :hover {  
+  background:rgba(12,215,179,.85);
+  text-align:center;
+  opacity:1;
+  -webkit-transition: opacity .25s ease;
+  -moz-transition: opacity .25s ease;
+  margin: 0;
+  padding: 0
+}
+
+#overlay img, #overlayText {
+  opacity: 1;
+}
+
+#overlayText {
+  position: relative;
+  top: 0px;
+  left: -192px;
+  background: black;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  display: inline-table;
+}
+
+#plus {  
+  color:black;
+  font-size:16px;
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  margin: 18px 0;
+  width: 77%;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #333;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -14px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #333;
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #eee;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #2a6495;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type=range]::-ms-fill-upper {
+  background: #eee;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type=range]::-ms-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #eee;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #333;
+}

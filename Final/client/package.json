@@ -1,0 +1,21 @@
+{
+  "name": "foodevotion",
+  "version": "1.0.0",
+  "main": "udpClient_app.js",
+  "scripts": {
+    "start": "node udpClient_app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Umi Syam <umi@newschool.edu>",
+  "dependencies": {
+    "async": "*",
+    "body-parser": "^1.14.2",
+    "deasync": "*",
+    "express": "*",
+    "get-pixels": "*",
+    "serialport": "*",
+    "thermalprinter": "^0.3.7"
+  },
+  "devDependencies": {},
+  "description": ""
+}

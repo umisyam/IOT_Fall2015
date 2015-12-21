@@ -1,0 +1,69 @@
+<!--  Main HTML file  
+*   Umi Syam - November 2015
+*   Internet of Things: FOODEVOTION
+-->
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+
+  <title>FOO(D)EVOTION</title>
+  <meta name="description" content="Food, memory, and prayers">
+  <meta name="viewport" content="width=device-width">
+  
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+  <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Nixie+One'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Cabin+Sketch:700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+  
+  <link type="css" rel="stylesheet" href="css/styles.css">
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <!-- include jquery from CDN -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+</head>
+
+<body>
+  <div class="bg">
+    <div id="wrapper">
+      <h1>If you could have ANY food in the world right now, <br/>what would you wish for?</h1>
+      
+      <form method="post" action="/save">
+        <textarea name="imageCaption" data-length=140 class="char-textarea" type="text" id="imageCaption" onblur="if (this.value == '') {this.value = 'Ex: Margherita pizza with fresh mozzarella';}"   onfocus="if (this.value == 'Ex: Margherita pizza with fresh mozzarella') {this.value = '';}">Ex: Margherita pizza with fresh mozzarella</textarea>
+
+        <!-- placeholder for the data container -->
+        <input type="text" id="mydata" class="hidden" name="data">
+
+        <div id="submit-button">
+          <button type="submit" id="save" class="savebutton">Send</button>
+        </div>
+        <h4 class="count"><span class="char-count">140</span> chars remaining</h4>
+      </form>
+
+      <div id="drawingTool">
+        <div id="instruction"><br/><br/></br>Hint: You can draw on the blank canvas here too >>>>  Use your imagination! </div>
+        <div id="container"></div>
+        <div id="container-controls">
+          <div id="buttoncontainer"></div>
+          <div id="slidercontainer">Adjust brush size: </div>
+        </div>
+        
+      </div>
+
+      <ul id="gallery"></ul>
+
+    </div> <!--end of wrapper -->
+    
+    <script type="text/javascript" src="http://192.168.1.118:3000/socket.io/socket.io.js"></script>
+
+    <script type="text/javascript" src="js/p5.min.js"></script>
+    <script type="text/javascript" src="js/p5.dom.js"></script>
+    
+    <script type="text/javascript" src="js/sketch.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+  </div><!--end of bg -->
+
+</body>
+</html>
