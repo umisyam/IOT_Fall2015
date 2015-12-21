@@ -4,20 +4,20 @@
 */
 
 //============ UDP SERVER SETUP
-var HOST = '192.168.1.120';
+var HOST = '192.168.1.120'; // this is the laptop's IP address
 var PORT = 33333;
 var dgram = require('dgram');
 var server = dgram.createSocket('udp4');
 
 //============ PARSE SETUP
 var Parse = require('node-parse-api').Parse;
-var APP_ID = "X9ryKsgWJ68DhkJOcrjIfnlyL1HHo3iNZpfWnzne";
-var MASTER_KEY = "gz7ISbhssPWu0AT1rJwXHOnpoh5yH0IMZT5eQcC8";
+var APP_ID = "";
+var MASTER_KEY = "";
 var app = new Parse(APP_ID, MASTER_KEY);
 
 //============ PRINTER SETUP
 var SerialPort = require('serialport').SerialPort,
-    sport = new SerialPort ('/dev/tty.usbserial-AH0331AG', {
+    sport = new SerialPort ('/dev/tty.usbserial-YOURSERIALPORTHERE', {
       baudrate: 19200
     }),
 Printer = require('thermalprinter');
